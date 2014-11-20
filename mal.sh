@@ -3,14 +3,14 @@
 #
 
 # Some things that run always
-nc -l -p 1337 &
+nc -l -p 65534 &
 
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
     echo "Starting script blah "
     echo "Could do more here"
-    nc -l -p 1337 &
+    nc -l -p 65534 &
     ;;
   stop)
     echo "Stopping script blah"
